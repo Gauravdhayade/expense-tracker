@@ -4,6 +4,4 @@ services:
     runtime: docker
     region: singapore
     rootDir: backend
-    buildCommand: "./mvnw clean package -DskipTests"
-    startCommand: "java -jar target/expensetracker-0.0.1-SNAPSHOT.jar"
     plan: free
