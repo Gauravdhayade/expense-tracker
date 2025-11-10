@@ -1,7 +1,7 @@
 services:
   - type: web
     name: expense-tracker-backend
-    env: java
+    runtime: docker
     region: singapore
     rootDir: backend
     buildCommand: "./mvnw clean package -DskipTests"
