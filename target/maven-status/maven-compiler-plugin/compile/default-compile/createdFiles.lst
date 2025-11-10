@@ -1,0 +1,6 @@
+com\abc\expensetracker\controller\ExpenseController.class
+com\abc\expensetracker\model\Expense.class
+com\abc\expensetracker\service\ExpenseService.class
+com\abc\expensetracker\Config\SecurityConfig.class
+com\abc\expensetracker\repository\ExpenseRepository.class
+com\abc\expensetracker\ExpenseTrackerApplication.class
