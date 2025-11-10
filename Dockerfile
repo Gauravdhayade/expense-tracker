@@ -1,14 +1,12 @@
-# Use OpenJDK base image
-FROM openjdk:17-jdk-slim
-
-# Set working directory
+# Stage 1: Build the Spring Boot app
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
 WORKDIR /app
-
-# Copy everything to container
 COPY . .
+RUN mvn clean package -DskipTests
 
-# Build application using Maven Wrapper
-RUN ./mvnw clean package -DskipTests
-
-# Run the Spring Boot JAR
-CMD ["java", "-jar", "target/expensetracker-0.0.1-SNAPSHOT.jar"]
+# Stage 2: Run the Spring Boot JAR
+FROM eclipse-temurin:17-jdk
+WORKDIR /app
+COPY --from=builder /app/target/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
