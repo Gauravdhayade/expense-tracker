@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: expense-tracker-backend
-    runtime: docker
-    region: singapore
-    rootDir: backend
-    plan: free
