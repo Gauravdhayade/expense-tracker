@@ -7,7 +7,7 @@ All data is stored securely in **browser localStorage**, ensuring an instant, of
 ---
 
 ## 🚀 Live Demo
-🔗 **Live URL:** [https://gauravdhayade.github.io/expense-tracker-frontend](https://gauravdhayade.github.io/expense-tracker-frontend)
+🔗 **Live URL:** https://gauravdhayade.github.io/
 
 ---
 
