@@ -42,41 +42,6 @@ expense-tracker-frontend/
 ├── vite.config.js
 └── README.md
 
-yaml
-Copy code
-
----
-
-## ⚙️ Setup Instructions
-To run this project locally:
-
-```bash
-# Clone this repository
-git clone https://github.com/<your-username>/expense-tracker-frontend.git
-
-# Navigate to the folder
-cd expense-tracker-frontend
-
-# Install dependencies
-npm install
-
-# Run the project
-npm run dev
-To build and deploy to GitHub Pages:
-
-bash
-Copy code
-npm run build
-npm run deploy
-📊 Future Enhancements
-✏️ Edit Expense Feature
-
-📤 Export to Excel / CSV
-
-🧾 Generate Monthly Expense PDF Report
-
-🔍 Filter by Category or Month
-
 👨‍💻 Author
 Gaurav Dhayade
 Java Full Stack Developer
